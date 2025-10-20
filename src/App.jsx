@@ -14,7 +14,7 @@ function App() {
             <div className="gallery-item">
               <img src={me} alt="gallery" />
               <div className="platform">
-              </div>
+              </div> 
             </div>
 
             <div className="about">

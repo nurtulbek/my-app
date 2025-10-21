@@ -40,7 +40,7 @@ function MeSlider() {
             <SwiperSlide className='gallery-item'>
                 <img src={me} alt="" />
             </SwiperSlide>
-            <SwiperSlide className='gallery-item'>
+            {/* <SwiperSlide className='gallery-item'>
                 <img src={me} alt="" />
             </SwiperSlide>
             <SwiperSlide className='gallery-item'>
@@ -48,7 +48,7 @@ function MeSlider() {
             </SwiperSlide>
             <SwiperSlide className='gallery-item'>
                 <img src={me} alt="" />
-            </SwiperSlide>
+            </SwiperSlide> */}
         </Swiper>
     )
 }

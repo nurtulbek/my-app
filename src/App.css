@@ -90,6 +90,11 @@
     width: 100%;
 }
 
+.project-item img {
+    width: 150px;
+    height: auto;
+}
+
 .skill-title, .what-i-do{
     margin-top: 30px;
     font-size: 20px;
@@ -100,7 +105,7 @@
 .skills {    
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-around;
 }
 
@@ -109,12 +114,16 @@
     flex-direction: column;
     align-items: center;
     background-color: #1A1D29;
-    width: 90px;
-    height: 90px;
-    padding: 10px;
+    width: 80px;
+    height: 85px;
+    padding: 5px;
     border-radius: 30px;
 
     text-align: center;
+}
+
+.skill-item p {
+    font-size: 14px;
 }
 
 

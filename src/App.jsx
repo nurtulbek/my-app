@@ -131,9 +131,8 @@ function App() {
             <div className="explanation-main">
                 I specialize in building the user-facing side of websites and applications, turning ideas and designs into 
                 fully functional, responsive, and visually engaging interfaces. My focus is on creating layouts that adapt
-                 seamlessly to any device, whether it is a desktop, tablet, or mobile phone. I pay close attention to performance 
-                 optimization so that pages load quickly and interactions feel smooth. With a strong foundation in React and modern frontend 
-                 tools, I deliver user experiences that are not only attractive but also intuitive and enjoyable to use.
+                seamlessly to any device, whether it is a desktop, tablet, or mobile phone. I pay close attention to performance 
+                optimization so that pages load quickly and interactions feel smooth. 
             </div>
           </div>
 
@@ -148,8 +147,7 @@ function App() {
             <div className="explanation-main">
               Behind every great application is a powerful backend, and this is where I create the invisible structure that keeps everything running 
               smoothly. I work on building secure servers, databases, and APIs that handle data efficiently and reliably. My goal is to ensure that applications 
-              remain stable under load, protect user information, and process requests quickly. By combining logic, data management, and performance optimization, I make sure that the 
-              foundation of each project is strong, scalable, and ready to support both current needs and future growth.
+              remain stable under load, protect user information, and process requests quickly.
             </div>
           </div>
 
@@ -162,9 +160,9 @@ function App() {
             </div>
 
             <div className="explanation-main">
-              Design is more than just aesthetics; it is about shaping the entire experience a user has when interacting with a product. I create designs in Figma that balance clarity,
-              simplicity, and modern style. My approach is to craft layouts that are easy to navigate, visually consistent, and aligned with the goals of the project. Every element, from
-              typography to spacing and color, is chosen to improve usability and leave a lasting impression. The end result is a design that not only looks professional but also guides 
+              Design is more than just aesthetics, it is about shaping the entire experience a user has when interacting with a product. 
+              I create designs in Figma that balance clarity,simplicity, and modern style. My approach is to craft layouts that are easy 
+              to navigate, visually consistent, and aligned with the goals of the project. The end result is a design that not only looks professional but also guides 
               users naturally and makes digital products enjoyable to use.
             </div>
           </div>
@@ -180,8 +178,7 @@ function App() {
             <div className="explanation-main">
               In the rapidly evolving world of artificial intelligence, I focus on prompt engineering to unlock the full potential of large language models such as ChatGPT. This involves writing 
               precise and effective prompts that generate high-quality, context-aware responses. I integrate AI into workflows and applications to automate tasks, enhance creativity, and provide
-              intelligent solutions to complex problems. By experimenting with different structures and techniques, I ensure that the interaction between humans and AI is efficient, accurate,
-              and valuable. Prompt engineering allows me to bring advanced AI capabilities into practical use cases, creating tools that are smarter and more adaptive.
+              intelligent solutions to complex problems. Prompt engineering allows me to bring advanced AI capabilities into practical use cases, creating tools that are smarter and more adaptive.
             </div>
           </div>
         </div>
@@ -194,9 +191,9 @@ function App() {
             or
           </div>
           <div className="social-media">
-            <img src={tg} alt="" />
-            <img src={insta} alt="" />
-            <img src={gitHub} alt="" />
+            <a href=""><img src={tg} alt="" /></a>
+            <a href=""><img src={insta} alt="" /></a>
+            <a href=""><img src={gitHub} alt="" /></a>
           </div>
         </div>
       </div>

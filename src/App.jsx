@@ -61,8 +61,10 @@ function App() {
           </div>
         </div>
 
+        
+        <p dangerouslySetInnerHTML={{ __html: t('works.title') }} className="works-title"></p>
+
         <div className="works">
-            <p className="works-title">Works</p>
             <div className="project-item">
               <a href="https://nasa-space-app-blush.vercel.app/">
                 <img src={hackhathon} alt="Hackathon project" />

@@ -62,6 +62,7 @@ function App() {
         </div>
 
         <div className="works">
+            <p className="works-title">Works</p>
             <div className="project-item">
               <a href="https://nasa-space-app-blush.vercel.app/">
                 <img src={hackhathon} alt="Hackathon project" />

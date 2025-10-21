@@ -190,20 +190,33 @@
 }
 
 .skill-item {
+    /* Adaptive sizing via CSS variables */
+    --skill-w: 80px;
+    --skill-h: 85px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 6px;
     background-color: #1A1D29;
-    width: 80px;
-    height: 85px;
+    width: var(--skill-w);
+    height: var(--skill-h);
     padding: 5px;
     border-radius: 30px;
-
     text-align: center;
 }
 
+/* Images scale relative to the skill card size */
+.skill-item img {
+    width: calc(var(--skill-w) * 0.5);
+    height: calc(var(--skill-w) * 0.5);
+    object-fit: contain;
+}
+
+/* Text scales relative to the skill card size */
 .skill-item p {
-    font-size: 14px;
+    font-size: calc(var(--skill-w) * 0.16);
 }
 
 
@@ -300,4 +313,68 @@
 .language-switcher button.active {
     background-color: #3B82F6;
     border-color: #3B82F6;
+}
+
+/* -------- Desktop adaptation -------- */
+@media (min-width: 1024px) {
+  .container {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 40px;
+  }
+
+  .header {
+    font-size: 20px;
+    height: 40px;
+    margin-bottom: 80px;
+  }
+
+  /* Keep original (mobile) layout for .me on desktop */
+
+  /* No desktop overrides for slider/gallery/platform to keep mobile behavior */
+
+  /* Keep original (mobile) styles for .about* on desktop */
+
+  .works {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .project-item {
+    height: 360px;
+  }
+
+  .project-item img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px 24px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 48px;
+    width: 100%;
+  }
+
+  .skill-item {
+    --skill-w: 100px;
+    --skill-h: 110px;
+    gap: 8px;
+  }
+
+  /* Image size inherits from variables; no fixed px here */
+
+  .skill-item p {
+    margin: 0;
+    font-weight: 600;
+  }
 }

@@ -89,3 +89,97 @@
     gap: 10px;
     width: 100%;
 }
+
+.skill-title, .what-i-do{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.skills {    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1A1D29;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 30px;
+
+    text-align: center;
+}
+
+
+.explanation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.explanation-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1D29;
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+
+.title-text {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.title {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+
+    height: 50px;
+}
+
+.title img {
+    height: 30px;
+}
+
+.explanation-main{
+    text-align: justify;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.contacts-title {
+    font-size: 20px;
+}
+
+.contacts-title span {
+    color: #3B82F6;
+    font-weight: 700;
+}
+
+.contacts-title a {
+    color: #3B82F6;
+    font-weight: 700;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}

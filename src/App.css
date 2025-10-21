@@ -1,3 +1,5 @@
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -23,17 +25,60 @@
 }
 
 .me {
-    width: 100%;
-}
-.gallery {
-    width: 100%;
-}
-
-.gallery-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+
+/* Swiper стили */
+.swiper {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #CCD6F6;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #CCD6F6 !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #CCD6F6 !important;
+    opacity: 0.4 !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 4px !important;
+    transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #3B82F6 !important;
+    opacity: 1 !important;
+    transform: scale(1.2) !important;
+}
+
+.swiper-pagination {
+    bottom: 0px !important;
+}
+.gallery {
+    height: 50vh;
+}
+
+.gallery-item {
+    text-align: center;
+    
 }
 
 .gallery-item img {
@@ -47,7 +92,7 @@
     max-width: 2000px;
     border-radius: 50px;
     position:relative;
-    bottom: 80px;
+    bottom: 100px;
     z-index: -1;
 }
 
@@ -82,20 +127,52 @@
     height: 60px;
     border-radius: 50px;
     font-size: 20px;
+
 }
 
+.about-button a {
+    text-decoration: none;
+    color: #CCD6F6;
+}
 
 .works {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
 }
 
+.project-item {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 .project-item img {
-    width: 150px;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.project-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
 }
 
 .skill-title, .what-i-do{
@@ -198,4 +275,29 @@
     justify-content: space-around;
 }
 
-@media (min-width: )
+/* Language Switcher Styles */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button {
+    background-color: transparent;
+    border: 1px solid #CCD6F6;
+    color: #CCD6F6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.language-switcher button:hover {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
+.language-switcher button.active {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}

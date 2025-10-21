@@ -1,4 +1,8 @@
 import "./App.css"
+import MeSlider from "./Slider.jsx"
+import LanguageSwitcher from "./components/LanguageSwitcher.jsx"
+import { useTranslation } from 'react-i18next';
+
 import me from "./assets/me.png"
 import hackhathon from "./assets/hackhathon.svg"
 import pasabahce from "./assets/pasabahce.svg"
@@ -23,177 +27,168 @@ import gitHub from "./assets/gitHub.svg"
 
 
 function App() {
+  const { t } = useTranslation();
 
   return (
     <>
       <div className="container">
         <div className="header">
-          <h1>NURTULBEK</h1>
-          <button>ENG</button>
+          <h1>{t('header.name')}</h1>
+          <LanguageSwitcher />
         </div>
+
+        
         <div className="me">
-          <div className="gallery">
-            <div className="gallery-item">
-              <img src={me} alt="gallery" />
-              <div className="platform">
-              </div> 
-            </div>
+          <MeSlider/>
+          
+          <div className="platform">
           </div>
+
           <div className="about">
             <p className="about-title">
-              Frontend Developer &
-               UI/UX Enthusiast
+              {t('about.title')}
             </p>
 
             <p className="about-text">
-              I build responsive, fast, and modern websites with clean design. 
-              Skilled in React, Figma, and FlutterFlow with  backend knowledge 
-              to deliver complete solutions.
+              {t('about.text')}
             </p>
 
-            <button className="about-button">Let's work otgether</button>
+            <button className="about-button">
+              <a href="mailto:owezresul0@gmail.com?body=My custom mail body">
+                {t('about.button')}
+              </a>
+            </button>
           </div>
         </div>
 
         <div className="works">
             <div className="project-item">
-              <img src={hackhathon} alt="" />
+              <img src={hackhathon} alt="Hackathon project" />
+              <p dangerouslySetInnerHTML={{ __html: t('works.hackathon') }}></p>
             </div>
             <div className="project-item">
-              <img src={pasabahce} alt="" />
+              <img src={pasabahce} alt="Pasabahce project" />
+              <p dangerouslySetInnerHTML={{ __html: t('works.pasabahce') }}></p>
             </div>
         </div>
 
         <div className="skill-title">
-            <p>Skills</p>
+            <p>{t('skills.title')}</p>
           </div>
 
         <div className="skills">
           <div className="skill-item">
-            <img src={html} alt="" />
+            <img src={html} alt="HTML icon" />
             <p>HTML</p>
           </div>
           <div className="skill-item">
-            <img src={css} alt="" />
+            <img src={css} alt="CSS icon" />
             <p>CSS</p>
           </div>
           <div className="skill-item">
-            <img src={js} alt="" />
+            <img src={js} alt="JavaScript icon" />
             <p>JavaScript</p>
           </div>
           <div className="skill-item">
-            <img src={ts} alt="" />
+            <img src={ts} alt="TypeScript icon" />
             <p>TypeScript</p>
           </div>
           <div className="skill-item">
-            <img src={react} alt="" />
+            <img src={react} alt="React icon" />
             <p>React</p>
           </div>
           <div className="skill-item">
-            <img src={figma} alt="" />
+            <img src={figma} alt="Figma icon" />
             <p>Figma</p>
           </div>
           <div className="skill-item">
-            <img src={next} alt="" />
+            <img src={next} alt="NextJS icon" />
             <p>NextJS</p>
           </div>
           <div className="skill-item">
-            <img src={router} alt="" />
+            <img src={router} alt="React Router icon" />
             <p>React router</p>
           </div>
           <div className="skill-item">
-            <img src={flutterFlow} alt="" />
+            <img src={flutterFlow} alt="FlutterFlow icon" />
             <p>FlutterFlow</p>
           </div>
           <div className="skill-item">
-            <img src={git} alt="" />
+            <img src={git} alt="Git icon" />
             <p>Git</p>
           </div>
           <div className="skill-item">
-            <img src={firebase} alt="" />
+            <img src={firebase} alt="Firebase icon" />
             <p>Firebase</p>
           </div>
         </div>
 
         <div className="what-i-do">
-          <p>What I do?</p>
+          <p>{t('whatIdo.title')}</p>
         </div>
 
         <div className="explanation">
           <div className="explanation-item">
             <div className="title">
-              <img src={react} alt="" className="title-img" />
+              <img src={react} alt="React icon" className="title-img" />
               <p className="title-text">
-                Frontend Development 
+                {t('frontend.title')}
               </p>
             </div>
 
             <div className="explanation-main">
-                I specialize in building the user-facing side of websites and applications, turning ideas and designs into 
-                fully functional, responsive, and visually engaging interfaces. My focus is on creating layouts that adapt
-                seamlessly to any device, whether it is a desktop, tablet, or mobile phone. I pay close attention to performance 
-                optimization so that pages load quickly and interactions feel smooth. 
+                {t('frontend.text')}
             </div>
           </div>
 
           <div className="explanation-item">
             <div className="title">
-              <img src={next} alt="" className="title-img" />
+              <img src={next} alt="NextJS icon" className="title-img" />
               <p className="title-text">
-                Backend Development  
+                {t('backend.title')}
               </p>
             </div>
 
             <div className="explanation-main">
-              Behind every great application is a powerful backend, and this is where I create the invisible structure that keeps everything running 
-              smoothly. I work on building secure servers, databases, and APIs that handle data efficiently and reliably. My goal is to ensure that applications 
-              remain stable under load, protect user information, and process requests quickly.
+              {t('backend.text')}
             </div>
           </div>
 
           <div className="explanation-item">
             <div className="title">
-              <img src={figma} alt="" className="title-img" />
+              <img src={figma} alt="Figma icon" className="title-img" />
               <p className="title-text">
-                UX/UI Design 
+                {t('design.title')}
               </p>
             </div>
 
             <div className="explanation-main">
-              Design is more than just aesthetics, it is about shaping the entire experience a user has when interacting with a product. 
-              I create designs in Figma that balance clarity,simplicity, and modern style. My approach is to craft layouts that are easy 
-              to navigate, visually consistent, and aligned with the goals of the project. The end result is a design that not only looks professional but also guides 
-              users naturally and makes digital products enjoyable to use.
+              {t('design.text')}
             </div>
           </div>
 
           <div className="explanation-item">
             <div className="title">
-              <img src={prompt} alt="" className="title-img" />
+              <img src={prompt} alt="Prompt Engineering icon" className="title-img" />
               <p className="title-text">
-                Prompt Engineering
+                {t('prompt.title')}
               </p>
             </div>
 
             <div className="explanation-main">
-              In the rapidly evolving world of artificial intelligence, I focus on prompt engineering to unlock the full potential of large language models such as ChatGPT. This involves writing 
-              precise and effective prompts that generate high-quality, context-aware responses. I integrate AI into workflows and applications to automate tasks, enhance creativity, and provide
-              intelligent solutions to complex problems. Prompt engineering allows me to bring advanced AI capabilities into practical use cases, creating tools that are smarter and more adaptive.
+              {t('prompt.text')}
             </div>
           </div>
         </div>
 
         <div className="contacts">  
-          <div className="contacts-title">
-            Have <span>questions?</span> <br />
-            You can <span>email</span> me at: <br />
-            <a href=""> owezresul0@gmail.com </a> <br />
-            or
+          <div className="contacts-title" 
+               dangerouslySetInnerHTML={{ __html: t('contacts.title') }}>
           </div>
           <div className="social-media">
-            <a href=""><img src={tg} alt="" /></a>
-            <a href=""><img src={insta} alt="" /></a>
-            <a href=""><img src={gitHub} alt="" /></a>
+            <a href="https://t.me/nurtulbek"><img src={tg} alt="Telegram" /></a>
+            <a href="https://www.instagram.com/nurtulbek?igsh=MXU5ZW5weDhqNmpzZw=="><img src={insta} alt="Instagram" /></a>
+            <a href="https://github.com/nurtulbek"><img src={gitHub} alt="GitHub" /></a>
           </div>
         </div>
       </div>

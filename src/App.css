@@ -191,19 +191,20 @@
 
 .skill-item {
     /* Adaptive sizing via CSS variables */
-    --skill-w: 80px;
-    --skill-h: 85px;
+    --skill-w: clamp(80px, 8vw, 110px);
+    --skill-h: calc(var(--skill-w) * 1.1);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px;
     background-color: #1A1D29;
     width: var(--skill-w);
     height: var(--skill-h);
     padding: 5px;
     border-radius: 30px;
+    border: 1px solid transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
     text-align: center;
 }
 
@@ -212,11 +213,47 @@
     width: calc(var(--skill-w) * 0.5);
     height: calc(var(--skill-w) * 0.5);
     object-fit: contain;
+    display: block;
 }
 
 /* Text scales relative to the skill card size */
 .skill-item p {
     font-size: calc(var(--skill-w) * 0.16);
+    line-height: 1.15;
+    margin: 0;
+}
+
+/* Hover/focus states for skill cards */
+@media (hover: hover) {
+  .skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-color: #3B82F6;
+    background-color: #1F2433;
+  }
+}
+
+.skill-item:focus-visible {
+  outline: none;
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.35);
+  border-color: #3B82F6;
+}
+
+.skill-item:active {
+  transform: translateY(0);
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .skill-item {
+    transition: none;
+  }
+  .skill-item:hover,
+  .skill-item:focus-visible,
+  .skill-item:active {
+    transform: none;
+  }
 }
 
 
@@ -366,8 +403,8 @@
   }
 
   .skill-item {
-    --skill-w: 100px;
-    --skill-h: 110px;
+    --skill-w: clamp(96px, 7.5vw, 120px);
+    --skill-h: calc(var(--skill-w) * 1.1);
     gap: 8px;
   }
 

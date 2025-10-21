@@ -63,12 +63,16 @@ function App() {
 
         <div className="works">
             <div className="project-item">
-              <img src={hackhathon} alt="Hackathon project" />
-              <p dangerouslySetInnerHTML={{ __html: t('works.hackathon') }}></p>
+              <a href="https://nasa-space-app-blush.vercel.app/">
+                <img src={hackhathon} alt="Hackathon project" />
+                <p dangerouslySetInnerHTML={{ __html: t('works.hackathon') }}></p>
+              </a>
             </div>
             <div className="project-item">
-              <img src={pasabahce} alt="Pasabahce project" />
-              <p dangerouslySetInnerHTML={{ __html: t('works.pasabahce') }}></p>
+              <a href="https://pasabahce.netlify.app/">
+                <img src={pasabahce} alt="Pasabahce project" />
+                <p dangerouslySetInnerHTML={{ __html: t('works.pasabahce') }}></p>
+              </a>
             </div>
         </div>
 

@@ -8,20 +8,8 @@ import me from "./assets/me.png"
 import me2 from "./assets/me2.png"
 import me3 from "./assets/me3.png"
 
-
-// To add more photos without touching the code,
-// place image files in `public/gallery/` and
-// list their paths in the `extraImages` array below.
-
 function MeSlider() {
-    // Images placed under `public/` can be referenced by absolute paths
-    const extraImages = [
-        "/gallery/photo-1.png", // first provided image
-        "/gallery/photo-2.jpg", // second provided image
-    ];
-
-    const slides = [me, me2, me3, ...extraImages];
-
+    
     return(
         <Swiper
             modules={[Navigation, Pagination, Autoplay]}
@@ -48,11 +36,15 @@ function MeSlider() {
                 },
             }}
         >
-            {slides.map((src, idx) => (
-                <SwiperSlide className='gallery-item' key={idx}>
-                    <img src={src} alt={`slide-${idx + 1}`} />
-                </SwiperSlide>
-            ))}
+            <SwiperSlide className='gallery-item'>
+                <img src={me} alt="" />
+            </SwiperSlide>
+            <SwiperSlide className='gallery-item'>
+                <img src={me2} alt="" />
+            </SwiperSlide>
+            <SwiperSlide className='gallery-item'>
+                <img src={me3} alt="" />
+            </SwiperSlide>
         </Swiper>
     )
 }

@@ -31,8 +31,10 @@
     "text": "In the rapidly evolving world of artificial intelligence, I focus on prompt engineering to unlock the full potential of large language models such as ChatGPT. This involves writing precise and effective prompts that generate high-quality, context-aware responses. I integrate AI into workflows and applications to automate tasks, enhance creativity, and provide intelligent solutions to complex problems. Prompt engineering allows me to bring advanced AI capabilities into practical use cases, creating tools that are smarter and more adaptive."
   },
   "works": {
+    "title": "Portfolio",
     "hackathon": "Hackathon winner <br /> web-site (only for PC)",
-    "pasabahce": "Pasabahce distributor <br /> web-site"
+    "pasabahce": "Pasabahce distributor <br /> web-site",
+    "cityExplorer": "City explorer <br /> web-site"
   },
   "contacts": {
     "title": "Have <span>questions?</span> <br />You can <span>email</span> me at: <br /><a href=\"mailto:owezresul0@gmail.com?body=My custom mail body\"> owezresul0@gmail.com </a> <br />or"

@@ -24,6 +24,7 @@ import prompt from "./assets/prompt.svg"
 import tg from "./assets/telegram.svg"
 import insta from "./assets/instagram.svg"
 import gitHub from "./assets/gitHub.svg"
+import cityExplorer from "./assets/city-explorer.svg"
 
 
 function App() {
@@ -75,6 +76,12 @@ function App() {
               <a href="https://pasabahce.netlify.app/">
                 <img src={pasabahce} alt="Pasabahce project" />
                 <p dangerouslySetInnerHTML={{ __html: t('works.pasabahce') }}></p>
+              </a>
+            </div>
+            <div className="project-item">
+              <a href="https://jocular-caramel-d79ea4.netlify.app/">
+                <img src={cityExplorer} alt="City Explorer web site" />
+                <p dangerouslySetInnerHTML={{ __html: t('works.cityExplorer') }}></p>
               </a>
             </div>
         </div>

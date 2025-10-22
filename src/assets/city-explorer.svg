@@ -1,0 +1,32 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'>
+  <defs>
+    <linearGradient id='g' x1='0' x2='1' y1='0' y2='1'>
+      <stop offset='0%' stop-color='#0f172a'/>
+      <stop offset='100%' stop-color='#1e293b'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='800' fill='url(#g)'/>
+  <g fill='none' stroke='#334155' stroke-width='2' opacity='0.7'>
+    <path d='M50 700 L150 450 L220 520 L260 420 L340 620 L390 560 L420 600 L520 480 L560 520 L620 420 L700 640 L760 580 L820 660 L900 520 L980 700' />
+  </g>
+  <g transform='translate(60,640)'>
+    <rect x='0' y='-220' width='80' height='220' fill='#3b82f6' rx='8'/>
+    <rect x='120' y='-160' width='80' height='160' fill='#60a5fa' rx='8'/>
+    <rect x='240' y='-260' width='80' height='260' fill='#93c5fd' rx='8'/>
+    <rect x='360' y='-190' width='80' height='190' fill='#2563eb' rx='8'/>
+    <rect x='480' y='-230' width='80' height='230' fill='#1d4ed8' rx='8'/>
+    <rect x='600' y='-170' width='80' height='170' fill='#3b82f6' rx='8'/>
+    <rect x='720' y='-210' width='80' height='210' fill='#60a5fa' rx='8'/>
+    <rect x='840' y='-140' width='80' height='140' fill='#93c5fd' rx='8'/>
+  </g>
+  <circle cx='940' cy='200' r='6' fill='#3b82f6'/>
+  <text x='960' y='205' fill='#cbd5e1' font-family='Inter, system-ui, Segoe UI, Arial' font-size='28'>London</text>
+  <text x='60' y='120' fill='#cbd5e1' font-family='Inter, system-ui, Segoe UI, Arial' font-size='56' font-weight='700'>City Explorer</text>
+  <text x='60' y='170' fill='#93c5fd' font-family='Inter, system-ui, Segoe UI, Arial' font-size='24'>Weather • Map • Compare</text>
+  <rect x='60' y='700' width='260' height='40' rx='20' fill='none' stroke='#3b82f6' stroke-width='2'/>
+  <text x='82' y='727' fill='#cbd5e1' font-family='Inter, system-ui, Segoe UI, Arial' font-size='20'>Preview placeholder</text>
+  <text x='60' y='770' fill='#64748b' font-family='Inter, system-ui, Segoe UI, Arial' font-size='14'>Replace this SVG with your screenshot when ready</text>
+  <style><![CDATA[
+    text { letter-spacing: 0.3px }
+  ]]></style>
+</svg>

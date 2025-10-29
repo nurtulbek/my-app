@@ -22,7 +22,38 @@
     height: 20px;
 
     margin-bottom: 70px;
+
+    gap: 10px;
 }
+
+
+/* Language Switcher Styles */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+}
+
+.language-switcher button {
+    background-color: transparent;
+    border: 1px solid #CCD6F6;
+    color: #CCD6F6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.language-switcher button:hover {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
+.language-switcher button.active {
+    background-color: #3B82F6;
+    border-color: #3B82F6;
+}
+
 
 .me {
     display: flex;
